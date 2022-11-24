@@ -345,7 +345,7 @@ static bool mx_house_wasp( map &m, const tripoint &loc )
     }
     m.place_spawns( GROUP_WASP_QUEEN, 1, point_zero, point( SEEX, SEEY ), 1, true );
     if( one_in( 5 ) ) {
-        m.place_spawns(GROUP_DERMATIK, 1, point_zero, point(SEEX * 2 - 1, SEEX * 2 - 1), rng(1, 3), false);// ( mon_dermatik, rng( 1, 3 ), tripoint( point( SEEX * 2 - 1, SEEY * 2 - 1 ), loc.z ) );
+        m.place_spawns(GROUP_DERMATIK, 1, point_zero, point(SEEX * 2 - 1, SEEX * 2 - 1), rng(1, 3), false);
     }
 
     return true;
